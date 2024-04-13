@@ -32,7 +32,7 @@ namespace GithubActionsLab
 
         // Implement 3 tests per operation, following a similar pattern as above
         [Test]
-        public void Power_Valid()
+        public void Power_Valid_Kodali()
         {
             Assert.AreEqual(1, Program.Power("1", "10"));
             Assert.AreEqual(36, Program.Power("6", "2"));
@@ -40,7 +40,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Invalid()
+        public void Power_Invalid_Kodali()
         {
             Assert.Throws<FormatException>(() => Program.Power("1", "haha"));
             Assert.Throws<FormatException>(() => Program.Power("twelve", "1"));
@@ -48,7 +48,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Null()
+        public void Power_Null_Kodali()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Power("5", null));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "55"));
